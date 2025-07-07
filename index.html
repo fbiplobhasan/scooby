@@ -36,8 +36,10 @@
 
       <!-- 🔍 Search -->
       <div class="flex justify-center">
-        <input type="text" placeholder="Search Here Anything..." class="px-4 py-2 rounded-l-full w-72 text-black" />
-        <button class="bg-indigo-500 text-white px-5 py-2 rounded-r-full hover:bg-indigo-600">Search</button>
+        <input id="search-text" type="text" placeholder="Search Here Anything..." class="px-4 py-2 rounded-l-full w-72 text-black" />
+        <button
+        onclick="handeSearchByCategory()"
+        class="bg-indigo-500 text-white px-5 py-2 rounded-r-full hover:bg-indigo-600">Search</button>
       </div>
     </div>
 
@@ -94,7 +96,8 @@
   </div>
 
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
