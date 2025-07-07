@@ -1,0 +1,100 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forum UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- 🔵 Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 shadow-md bg-white">
+    <div class="text-2xl font-bold">
+      <span class="text-black">SC</span><span class="text-blue-600">👀BY</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200"><i class="fas fa-home"></i></button>
+      <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200"><i class="fas fa-user"></i></button>
+      <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200"><i class="fas fa-comments"></i></button>
+      <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200"><i class="fas fa-bell"></i></button>
+      <button class="px-4 py-2 bg-indigo-500 text-white rounded-full hover:bg-indigo-600">Sign In</button>
+    </div>
+  </nav>
+
+  <!-- 🟣 Banner -->
+  <section class="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-10 rounded-b-2xl relative">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-3">Welcome to the <span class="text-indigo-400">Sc👀by</span> Forum</h1>
+      <p class="text-gray-300 mb-6">Here you can filter the posts by the latest, most popular, and other type of
+        categories, also enjoy the modern aesthetic design.</p>
+
+      <!-- 🔍 Search -->
+      <div class="flex justify-center">
+        <input type="text" placeholder="Search Here Anything..." class="px-4 py-2 rounded-l-full w-72 text-black" />
+        <button class="bg-indigo-500 text-white px-5 py-2 rounded-r-full hover:bg-indigo-600">Search</button>
+      </div>
+    </div>
+
+    <!-- ℹ️ Info Box -->
+    <div class="absolute top-10 right-10 bg-white text-black p-5 rounded-xl shadow-md text-sm space-y-2 w-40">
+      <p><strong>Registered Users:</strong> 01</p>
+      <p><strong>Forum:</strong> 05</p>
+      <p><strong>Topics:</strong> 01</p>
+      <p><strong>Replies:</strong> 01</p>
+    </div>
+  </section>
+
+  <!-- 🗣️ Heading Section -->
+  <section class="text-center py-10">
+    <h2 class="text-3xl font-bold mb-2">Let's Discuss</h2>
+    <p class="text-gray-600 max-w-xl mx-auto">
+      With the modern design and the latest features, you can discuss whatever you want
+      and see other people's opinions or discussions, also you can see by categories and mark as read.
+    </p>
+  </section>
+
+  <!-- 💬 Discussion Container -->
+  <div class="flex flex-col lg:flex-row justify-center items-start gap-6 px-6">
+
+    <!-- Left Card -->
+    <div class="bg-white p-5 rounded-xl shadow-md w-full max-w-2xl">
+      <div class="flex items-start gap-4">
+        <img src="https://via.placeholder.com/60" alt="thumbnail" class="rounded-lg w-16 h-16" />
+        <div class="flex-1">
+          <p class="text-sm text-gray-500">#category &nbsp; | &nbsp; Author: <span class="text-black">author.name</span>
+          </p>
+          <h3 class="text-xl font-semibold">title</h3>
+          <p class="text-gray-600 text-sm mb-3">description</p>
+          <div class="flex items-center text-sm text-gray-500 gap-4 mt-2 border-t pt-2">
+            <span>💬 comment_count</span>
+            <span>👁️ view_count</span>
+            <span>🕒 posted_time Min</span>
+            <button class="ml-auto text-green-500 hover:text-green-700">▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Card -->
+    <div class="bg-white p-4 rounded-xl shadow-md w-full max-w-xs text-sm">
+      <div class="flex justify-between items-center mb-2">
+        <h4 class="font-semibold text-gray-700">Title</h4>
+        <span class="text-green-500 text-xs">✔ Mark as read (0)</span>
+      </div>
+      <p class="text-gray-600 mb-2">postData.description</p>
+      <div class="text-gray-500">👁 postData.view_count</div>
+    </div>
+
+  </div>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
