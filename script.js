@@ -7,10 +7,12 @@ const loadAllPost = async (category) => {
   // } else{
   //     console.log(`https://openapi.programming-hero.com/api/retro-forum/posts`)
   // }
+
+  document.getElementById('post-container').innerHTML = "";
   const response = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts${category ? `?category=${category}` : ""}`)
   const data = await response.json();
   displayAllPosts(data.posts);
-  console.log(data.post);
+  console.log(data.posts);
 }
 
 const displayAllPosts = (posts) => {
